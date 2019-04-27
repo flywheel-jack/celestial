@@ -31,9 +31,9 @@ function celestial_scripts() {
 			'root' => esc_url_raw( $url ),
 		),
 		'woo' => array(
-			'url' => esc_url_raw( 'https://localhost/celestial/wp-json/wc/v2/' ), // hard-code URL since it needs to be HTTPS for WC REST API to work
-			'consumer_key' => 'ck_4c897a273bde1274df0325247804ceeb8b09334d',
-			'consumer_secret' => 'cs_b1f81580f8f03ff383b7d655e889c26464639064'
+			'url' => esc_url_raw( get_site_url($blog_id, $path, 'https') . '/wp-json/wc/v2/' ),
+			'consumer_key' => 'ck_1aeb5791cac3b1d965cc6e9cf42caadee9e3652e',
+			'consumer_secret' => 'cs_3e519451cea14c244afa96c89e6ccfe9f11add7d'
 		),
 	) ) ) );
 }
